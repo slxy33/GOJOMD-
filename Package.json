@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-bot",  // Non pwojè ou
+  "version": "1.0.0",  // Vèsyon pwojè a
+  "description": "A WhatsApp bot built using whatsapp-web.js",  // Deskripsyon kout sou pwojè a
+  "main": "bot.js",  // Fichye prensipal bot la
+  "scripts": {
+    "start": "node bot.js"  // Kòmand pou kouri bot la
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.17.0",  // Vèsyon whatsapp-web.js ou vle itilize
+    "qrcode-terminal": "^0.12.0"  // Si ou vle montre QR code nan tèminal la
+  },
+  "author": "Non ou",  // Non ou
+  "license": "MIT",  // Lisans pwojè a
+  "bugs": {
+    "url": "https://github.com/username/repository/issues"  // URL rapò erè (si ou gen yon repozitwa GitHub)
+  },
+  "homepage": "https://github.com/username/repository"  // URL paj pwojè sou GitHub
+}
