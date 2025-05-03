@@ -1,0 +1,23 @@
+const commandes_list = [];
+
+function commandes(data, callback) {
+    // Verifye si tout sa nou bezwen prezan
+    if (!data.nom || typeof callback !== "function") {
+        throw new Error("Non kòmand lan oswa fonksyon callback pa valid.");
+    }
+
+    // Mete kòmand lan nan lis
+    commandes_list.push({
+        nom: data.nom,
+        categorie: data.categorie || "Autre",
+        react: data.react || "✅",
+        desc: data.desc || "",
+        execute: callback,
+    });
+}
+
+// Ekspòte fonksyon an ak lis kòmand yo
+module.exports = {
+    commandes,
+    commandes_list,
+};
